@@ -1,4 +1,17 @@
+===========
 Exchange Admin center
+===========
 
 Reports > Mail flow > Auto forwarded message report
 https://admin.exchange.microsoft.com/#/reports/autoforwardedmessages
+
+
+===========
+Azure AD Sync / Exchange: Run these commands after user attributes have been changed
+===========
+
+Start-ADSyncSyncCycle -PolicyType Delta
+
+Start-ADSyncSyncCycle -PolicyType Initial
+
+Start-ADSyncSyncCycle -PolicyType Full

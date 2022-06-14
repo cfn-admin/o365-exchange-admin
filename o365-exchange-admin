@@ -22,3 +22,18 @@ Connect to Office 365 Online via powershell:
 =============
 
 $Cred = Get-Credential $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic -AllowRedirection Import-PSSession $Session 
+
+
+============
+Connect to Exchange Online Powershell
+============
+
+I use this to edit attributes / UPN / email addresses when there's a fuckup with ADSI. 
+
+Example - we are renaming a user from a metia address to a finextra address (UPN): 
+
+//This will connect you to the Exchange Online powershell so that you can make edits
+
+Install-Module MSOnline
+
+Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@metia.com -NewUserPrincipalName sunny.cher@finextra.com

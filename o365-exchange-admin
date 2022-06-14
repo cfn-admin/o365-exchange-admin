@@ -36,4 +36,6 @@ Example - we are renaming a user from a metia address to a finextra address (UPN
 
 Install-Module MSOnline
 
+Connect-MsolService
+
 Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@metia.com -NewUserPrincipalName sunny.cher@finextra.com

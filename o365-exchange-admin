@@ -1,3 +1,19 @@
+
+Top 50 PowerShell Scripts for Microsoft 365 Admins
+https://o365reports.com/2022/06/15/top-50-powershell-scripts-for-microsoft-365-admins/
+
+We have categorized the scripts as given below. 
+
+Office 365 license management 
+Office 365 user management 
+Guest and external user management 
+Group and group membership management 
+Exchange mailbox management 
+Exchange Online email auditing 
+Microsoft Teams & SharePoint Online management 
+General Office 365 scripts 
+
+
 ===========
 Exchange Admin center
 ===========
@@ -39,3 +55,9 @@ Install-Module MSOnline
 Connect-MsolService
 
 Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@metia.com -NewUserPrincipalName sunny.cher@finextra.com
+
+
+==========================================================
+Export Office 365 Users’ Last Password Change Date to CSV 
+
+Get-MsolUser -All | select DisplayName,LastPasswordChangeTimeStamp | Export-CSV LastPasswordChangeDate.csv -NoTypeInformation

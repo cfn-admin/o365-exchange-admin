@@ -49,7 +49,7 @@ Connect to Exchange Online Powershell
 
 I use this to edit attributes / UPN / email addresses when there's a fuckup with ADSI. 
 
-Example - we are renaming a user from a metia address to a finextra address (UPN): 
+Example - we are renaming a user from a Company B address to a company A address (UPN): 
 
 //This will connect you to the Exchange Online powershell so that you can make edits
 
@@ -57,7 +57,7 @@ Install-Module MSOnline
 
 Connect-MsolService
 
-Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@metia.com -NewUserPrincipalName sunny.cher@finextra.com
+Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@emaildomain1.com -NewUserPrincipalName sunny.cher@emaildomain2.com
 
 
 ==========================================================

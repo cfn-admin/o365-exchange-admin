@@ -59,6 +59,11 @@ Connect-MsolService
 
 Set-MsolUserPrincipalName -UserPrincipalName sunny.cher@emaildomain1.com -NewUserPrincipalName sunny.cher@emaildomain2.com
 
+Update Office 365 Primary email address:
+FYI, you can change it directly in O365 via PowerShell:
+
+Set-Mailbox user@domain.onmicrosoft.com  -WindowsEmailAddress user@domain.com
+
 
 ==========================================================
 Export Office 365 Users’ Last Password Change Date to CSV 

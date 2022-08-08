@@ -1,9 +1,15 @@
 Encryption @ Microsoft 365
 https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption?view=o365-worldwide
 
-TO Connectio via Powershell from my admin laptop:
+Microsoft Exchange Powershell / connection via Powershell from my admin laptop:
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
+
+
+Microsoft Teams Powershell:
+Import-Module MicrosoftTeams
+$credential = Get-Credential
+Connect-MicrosoftTeams -Credential $credential
 
 
 Top 50 PowerShell Scripts for Microsoft 365 Admins

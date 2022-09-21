@@ -53,9 +53,9 @@ Connect to Office 365 Online via powershell:
 $Cred = Get-Credential $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic -AllowRedirection Import-PSSession $Session 
 
 
-============
+===============
 Connect to Exchange Online Powershell
-============
+===============
 
 I use this to edit attributes / UPN / email addresses when there's a fuckup with ADSI. 
 
@@ -75,7 +75,7 @@ FYI, you can change it directly in O365 via PowerShell:
 Set-Mailbox user@domain.onmicrosoft.com  -WindowsEmailAddress user@domain.com
 
 
-==========================================================
+===============================================================
 Export Office 365 Users’ Last Password Change Date to CSV 
 
 Get-MsolUser -All | select DisplayName,LastPasswordChangeTimeStamp | Export-CSV LastPasswordChangeDate.csv -NoTypeInformation

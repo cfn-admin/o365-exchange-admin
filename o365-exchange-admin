@@ -57,7 +57,7 @@ $Cred = Get-Credential $Session = New-PSSession -ConfigurationName Microsoft.Exc
 Connect to Exchange Online Powershell
 ===============
 
-I use this to edit attributes / UPN / email addresses when there's a fuckup with ADSI. 
+I use this to edit attributes / UPN / email addresses when there's a screwup with ADSI. 
 
 Example - we are renaming a user from a Company B address to a company A address (UPN): 
 

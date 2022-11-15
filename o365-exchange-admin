@@ -28,17 +28,17 @@ Microsoft Teams & SharePoint Online management
 General Office 365 scripts 
 
 
-===========
+=============
 Exchange Admin center
-===========
+=============
 
 Reports > Mail flow > Auto forwarded message report
 https://admin.exchange.microsoft.com/#/reports/autoforwardedmessages
 
 
-===========
+=============
 Azure AD Sync / Exchange: Run these commands after user attributes have been changed
-===========
+=============
 
 Start-ADSyncSyncCycle -PolicyType Delta
 
@@ -47,16 +47,16 @@ Start-ADSyncSyncCycle -PolicyType Initial
 Start-ADSyncSyncCycle -PolicyType Full
 
 
-=============
+===============
 Connect to Office 365 Online via powershell: 
-=============
+===============
 
 $Cred = Get-Credential $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic -AllowRedirection Import-PSSession $Session 
 
 
-===============
+=================
 Connect to Exchange Online Powershell
-===============
+=================
 
 I use this to edit attributes / UPN / email addresses when there's a screwup with ADSI. 
 

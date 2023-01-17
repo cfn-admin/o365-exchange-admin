@@ -1,0 +1,14 @@
+# Connect to Office 365
+$UserCredential = Get-Credential
+Connect-MsolService -Credential $UserCredential
+
+# Set variables for the new user account
+$UserName = "JohnDo1e"
+$Password = "P@&*%GF"
+$FirstName = "John"
+$LastName = "Doe1"
+$DisplayName = "$FirstName $LastName"
+$Domain = "contoso.com"
+
+# Create the new user account
+New-MsolUser -UserPrincipalName "$UserName@$Domain" -DisplayName "$DisplayName" -FirstName $FirstName -LastName $LastName -Password $Password -UsageLocation "UK"

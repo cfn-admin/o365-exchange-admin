@@ -28,17 +28,17 @@ Microsoft Teams & SharePoint Online management
 General Office 365 scripts 
 
 
-===============
+=================
 Exchange Admin center
-===============
+=================
 
 Reports > Mail flow > Auto forwarded message report
 https://admin.exchange.microsoft.com/#/reports/autoforwardedmessages
 
 
-===============
+=================
 Azure AD Sync / Exchange: Run these commands after user attributes have been changed
-===============
+=================
 
 Start-ADSyncSyncCycle -PolicyType Delta
 
